@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ÇözümPro | İşletmeler İçin Akıllı Çözümler</title>
+  <meta name="description" content="ÇözümPro, işletmelerin operasyonel sorunlarını daha hızlı ve düşük maliyetle çözmelerine yardımcı olur.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="#anasayfa">Çözüm<span>Pro</span></a>
+  <nav>
+    <a href="#cozum">Çözüm</a>
+    <a href="#surec">Nasıl Çalışır?</a>
+    <a href="#iletisim">İletişim</a>
+  </nav>
+  <a class="nav-btn" href="#iletisim">Teklif Al</a>
+</header>
+
+<main>
+<section class="hero" id="anasayfa">
+  <div class="hero-copy">
+    <div class="eyebrow">İşletmeler için pratik çözümler</div>
+    <h1>İşletmenizdeki<br><em>gereksiz maliyetleri</em><br>birlikte azaltalım.</h1>
+    <p>Operasyon, stok, üretim ve iş takibindeki sorunları analiz ediyor; işletmenize uygun, ölçülebilir çözümler geliştiriyoruz.</p>
+    <div class="actions">
+      <a class="primary" href="#iletisim">Ücretsiz Ön Görüşme →</a>
+      <a class="secondary" href="#cozum">Nasıl yardımcı oluyoruz?</a>
+    </div>
+  </div>
+  <div class="dashboard">
+    <div class="dash-top"><span>İşletme Özeti</span><b>● Canlı</b></div>
+    <div class="metric"><small>Takip edilen süreçler</small><strong>24</strong></div>
+    <div class="metric"><small>Tespit edilen fırsatlar</small><strong>8</strong></div>
+    <div class="metric"><small>İyileştirme potansiyeli</small><strong>%17</strong></div>
+    <div class="mini-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="dash-note">Veriye dayalı kararlar. Daha az kayıp.</div>
+  </div>
+</section>
+
+<section class="trust">
+  <span>FABRİKALAR</span><span>ÜRETİM</span><span>LOJİSTİK</span><span>TİCARET</span><span>KOBİ</span>
+</section>
+
+<section class="section" id="cozum">
+  <div class="section-head">
+    <div class="eyebrow">Ne yapıyoruz?</div>
+    <h2>Sorunu buluyor,<br><span>çözümü birlikte kuruyoruz.</span></h2>
+    <p>Hazır ve gereksiz büyük sistemler yerine, işletmenizin gerçek ihtiyacına göre sade çözümler.</p>
+  </div>
+  <div class="cards">
+    <article><div class="icon">01</div><h3>Sorun Analizi</h3><p>İşletmenizde zaman, para veya verim kaybı oluşturan noktaları belirliyoruz.</p></article>
+    <article><div class="icon">02</div><h3>Çözüm Tasarımı</h3><p>Bulduğumuz probleme özel uygulanabilir bir ürün veya hizmet tasarlıyoruz.</p></article>
+    <article><div class="icon">03</div><h3>Ölçülebilir Sonuç</h3><p>Çözümün işletmeye sağladığı zaman ve maliyet etkisini takip ediyoruz.</p></article>
+  </div>
+</section>
+
+<section class="dark" id="surec">
+  <div class="section-head light">
+    <div class="eyebrow">Basit süreç</div>
+    <h2>4 adımda <span>başlayalım.</span></h2>
+  </div>
+  <div class="steps">
+    <div><b>01</b><h3>Tanışalım</h3><p>İşletmenizi ve mevcut süreci dinliyoruz.</p></div>
+    <div><b>02</b><h3>Problemi bulalım</h3><p>En çok kayıp oluşturan noktayı belirliyoruz.</p></div>
+    <div><b>03</b><h3>Çözümü kuralım</h3><p>Size özel basit ve uygulanabilir çözüm geliştiriyoruz.</p></div>
+    <div><b>04</b><h3>Sonucu ölçelim</h3><p>Çözümün gerçek etkisini birlikte takip ediyoruz.</p></div>
+  </div>
+</section>
+
+<section class="contact" id="iletisim">
+  <div>
+    <div class="eyebrow">İlk adım</div>
+    <h2>İşletmenizde çözülmesini istediğiniz bir sorun mu var?</h2>
+    <p>Formu doldurun. İhtiyacınızı inceleyip size geri dönelim.</p>
+  </div>
+  <form onsubmit="sendForm(event)">
+    <input id="name" required placeholder="Ad Soyad">
+    <input id="company" required placeholder="Firma Adı">
+    <input id="phone" required placeholder="Telefon / WhatsApp">
+    <textarea id="problem" required placeholder="Kısaca hangi konuda desteğe ihtiyacınız var?"></textarea>
+    <button class="primary" type="submit">WhatsApp'tan Gönder →</button>
+    <small>Form gönderildiğinde WhatsApp açılır. Numara daha sonra değiştirilebilir.</small>
+  </form>
+</section>
+</main>
+
+<footer><strong>ÇözümPro</strong><span>İşletmeler için akıllı çözümler.</span><span>© 2026 ÇözümPro</span></footer>
+
+<script>
+function sendForm(e){
+  e.preventDefault();
+  const n = document.getElementById('name').value;
+  const c = document.getElementById('company').value;
+  const p = document.getElementById('phone').value;
+  const m = document.getElementById('problem').value;
+  const text = `Merhaba ÇözümPro,\\n\\nAd Soyad: ${n}\\nFirma: ${c}\\nTelefon: ${p}\\nSorun/İhtiyaç: ${m}`;
+  const whatsappNumber = "905000000000"; // Buraya kendi WhatsApp numaranı yaz.
+  window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`, "_blank");
+}
+</script>
+</body>
+</html>
